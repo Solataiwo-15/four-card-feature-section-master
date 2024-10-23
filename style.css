@@ -47,21 +47,15 @@ body{
 
 .card-section{
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  gap: 0.625rem;
-}
-
-.card-section-2{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 9.375rem;
-  margin-top: -11.4375rem;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
 }
 
 .card-1{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: grid;
+  grid-row: 1/3;
+  grid-column: 2/3;
   width: 8.125rem;
   height: 6.25rem;
   background-color: hsl(0, 0%, 100%);
@@ -71,9 +65,9 @@ body{
   box-shadow: 0rem 0.625rem 0.625rem 0rem rgba(64, 117, 230, 0.05);
 }
 .card-2{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: grid;
+  grid-row: 3/5;
+  grid-column: 2/3;
   width: 8.125rem;
   height: 6.25rem;
   background-color: hsl(0, 0%, 100%);
@@ -82,10 +76,11 @@ body{
   padding: 0.75rem;
   box-shadow: 0rem 0.625rem 0.625rem 0rem rgba(64, 117, 230, 0.05);
 }
+
 .card-3{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: grid;
+  grid-row: 2/4;
+  grid-column: 1/2;
   width: 8.125rem;
   height: 6.25rem;
   background-color: hsl(0, 0%, 100%);
@@ -95,9 +90,9 @@ body{
   box-shadow: 0rem 0.625rem 0.625rem 0rem rgba(64, 117, 230, 0.05);
 }
 .card-4{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: grid;
+  grid-row: 2/4;
+  grid-column: 3/4;
   width: 8.125rem;
   height: 6.25rem;
   background-color: hsl(0, 0%, 100%);
@@ -173,12 +168,6 @@ body{
     margin-top: 0.5625rem;
   }
   
-  .card-section-2{
-    display: flex;
-    flex-direction: column;
-    gap: 0.625rem;
-  }
-  
   .card-section{
     display: flex;
     flex-direction: column;
@@ -188,7 +177,6 @@ body{
   .card-1{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     width: 8.125rem;
     height: 6.25rem;
     background-color: hsl(0, 0%, 100%);
@@ -200,7 +188,7 @@ body{
   .card-2{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    grid-row: 1;
     width: 8.125rem;
     height: 6.25rem;
     background-color: hsl(0, 0%, 100%);
@@ -212,7 +200,6 @@ body{
   .card-3{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     width: 8.125rem;
     height: 6.25rem;
     background-color: hsl(0, 0%, 100%);
@@ -224,7 +211,6 @@ body{
   .card-4{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     width: 8.125rem;
     height: 6.25rem;
     background-color: hsl(0, 0%, 100%);
